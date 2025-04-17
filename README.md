@@ -97,6 +97,7 @@ SEO-оптимизация
 3) Оптимизация изображений
 <img src="image/online-study.jpg" alt="верхний слой компьютера">
 4) Мобильная оптимизация
+
 ![изображение](https://github.com/user-attachments/assets/514ef5db-cd6a-4fe2-8cee-38892188cc40)
 ![изображение](https://github.com/user-attachments/assets/7f9969cd-08f6-43f2-87c4-85a8b34d3b2e)
 ![изображение](https://github.com/user-attachments/assets/d506d096-3524-4405-b235-33d7b37fb589)
