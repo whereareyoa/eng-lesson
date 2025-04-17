@@ -1,233 +1,113 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Basic Project Template</h1>
-    <br>
-</p>
+LanguageLearn – это платформа для изучения языков и управления учебным процессом. Мы предлагаем разнообразные курсы, материалы и инструменты для эффективного обучения. Поисковая ссылка: languagelearn.kpk45.ru. Самым сложным было разработать интерактивные задания, а самым интересным — верстка веб-сайта.
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
+As-Is
+![изображение](https://github.com/user-attachments/assets/a37a4792-414c-4bac-9345-ee2e63d5d074)
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+To be
+![изображение](https://github.com/user-attachments/assets/de202c35-692b-4587-995c-0ce6095a4dd7)
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![build](https://github.com/yiisoft/yii2-app-basic/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-basic/actions?query=workflow%3Abuild)
+ER
+![изображение](https://github.com/user-attachments/assets/7176e052-19d9-4565-b192-595ff4aee02a)
 
-DIRECTORY STRUCTURE
--------------------
+Руководство пользователя
+Неавторизованный пользователь должен авторизоваться (Рисунок 1), после успешной аутентификации пользователь перенаправляется на главную страницу, где представлена общая информация.
+![изображение](https://github.com/user-attachments/assets/a2393cf4-58cd-42cd-aa38-c3bb7e6babc5)
+рис. 1
 
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+Форма авторизации
+В верхней части главной страницы располагается элемент управления типа “кнопка” с надписью “Записаться на курс” (Рисунок 2).
+ ![изображение](https://github.com/user-attachments/assets/2a441e59-18eb-4221-a427-ab57752fcbc8)
 
+Рисунок 2. Главная страница
+При активации элемента управления “Записаться на курс” осуществляется навигация на модальное окно, содержащую поля, который пользователь должен заполнить что бы записаться на курс
+(Рисунок 3).
+![изображение](https://github.com/user-attachments/assets/f48362d1-171a-4d1e-ba24-e122efc37a18)
 
+Рисунок 3. Карточки с курсами
 
-REQUIREMENTS
-------------
+Кроме того, на главной странице присутствует элемент управления типа “карточка ” с надписью “Английский язык”, так же “кнопка” с надписью “Узнать о курсе”. Активация данного элемента управления инициирует переход на соответствующую страницу (Рисунок 4).
+![изображение](https://github.com/user-attachments/assets/9c97bd8d-b7a1-4eb1-99ed-b7f7ad2dc6b4)
 
-The minimum requirement by this project template that your Web server supports PHP 7.4.
+Рисунок 4. Прохождение тестирования 
 
+На данной странице присутствует элемент управления типа “кнопка” с надписью “пройти тестирование”, Активация данного элемента управления инициирует переход на страницу с тестированием (Рисунок 5).
+![изображение](https://github.com/user-attachments/assets/4bc6e741-7414-445d-ad8d-816b9710d28d)
 
-INSTALLATION
-------------
+Рисунок 5. Тестирование
 
-### Install via Composer
+На хеадере страницы присутствует элемент управления типа “кнопка” с надписью “Уроки”, Активация данного элемента управления инициирует переход на страницу с тестированием(Рисунок 6).
+Рисунок 6. Хеадер страницы
+![изображение](https://github.com/user-attachments/assets/b3b2db5b-0c81-4b2b-a711-fc4c355304bb)
 
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+При переходе по элементу управления типа “кнопка” с надписью “Уроки”, мы переходим на страницу с уроки, где располагаются уроки, при активации данного элемента управления инициирует переход на страницу с прохождением урока(Рисунок 7).
+ ![изображение](https://github.com/user-attachments/assets/87819db2-4ac9-4076-bf00-dede9e252396)
 
-You can then install this project template using the following command:
+Рисунок 7. Уроки
 
-~~~
-composer create-project --prefer-dist yiisoft/yii2-app-basic basic
-~~~
+При переходе по элементу управления типа “кнопка” с надписью “Английский язык”, мы переходим на страницу урока, где располагается сам урок, при активации данного элемента управления инициирует переход на страницу с прохождением урока(Рисунок 8).
+ ![изображение](https://github.com/user-attachments/assets/c2a51610-ebbe-4ffb-a449-b80c5f900cbc)
 
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
+Рисунок 8. Урок
+На хеадере страницы (Рисунок 6) присутствует элемент управления типа “кнопка” с надписью “Слова”, Активация данного элемента управления инициирует переход на страницу с словами(Рисунок 9).
 
-~~~
-http://localhost/basic/web/
-~~~
+ ![изображение](https://github.com/user-attachments/assets/4260be5a-6d13-4deb-a90c-634f3327db5f)
 
-### Install from an Archive File
+Рисунок 9. Слова
 
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
+При переходе по элементу управления типа “кнопка” с надписью “Добавить новое слово”, мы переходим на страницу, где располагается страница где можно добавить новое слово, при активации данного элемента управления инициирует переход на страницу (Рисунок 10).
+ ![изображение](https://github.com/user-attachments/assets/764bcf66-e42e-49fb-8be4-6302a0968190)
 
-Set cookie validation key in `config/web.php` file to some random secret string:
+Рисунок 10. Добавление слов
 
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
-```
+На хеадере страницы (Рисунок 6) присутствует элемент управления типа “кнопка” с надписью “Рандомное слово”, Активация данного элемента управления инициирует переход на страницу с рандомым словом(Рисунок 11).
+ ![изображение](https://github.com/user-attachments/assets/72bb3d5f-6a89-4963-bc30-a50801c82d1c)
 
-You can then access the application through the following URL:
+Рисунок 11. Случайное слово дня
 
-~~~
-http://localhost/basic/web/
-~~~
+На хеадере страницы (Рисунок 6) присутствует элемент управления типа “кнопка” с надписью “Форум”, Активация данного элемента управления инициирует переход на страницу форума(Рисунок 12).
+ ![изображение](https://github.com/user-attachments/assets/2fd79a6e-04f3-47e2-bf52-cf0cc64cf8b7)
 
+Рисунок 12. Форум
+При переходе по элементу управления типа “кнопка” с надписью “Создать новую тему”, мы переходим на страницу, где располагается страница где можно добавить создать новую тему, при активации данного элемента управления инициирует переход на страницу (Рисунок 13).
+ ![изображение](https://github.com/user-attachments/assets/8c066dd2-751e-4cac-93c5-c35f2199678c)
 
-### Install with Docker
+Рисунок 13. Создание новой темы
 
-Update your vendor packages
 
-    docker-compose run --rm php composer update --prefer-dist
-    
-Run the installation triggers (creating cookie validation code)
+Административный модуль
+Пользователь, атрибуту “role” которого в базе данных присвоено значение “1”, обладает правами администратора.
 
-    docker-compose run --rm php composer install    
-    
-Start the container
+Учетные данные для авторизации администратора: login: admin, password: admin.
+После аутентификации администратор перенаправляется на страницу, где присутствует  элемент управления типа “кнопка” с надписью “Перейти”, мы переходим на страницу, где располагается  управление курсами
+(Рисунок 14). 
+ ![изображение](https://github.com/user-attachments/assets/b061ceae-6734-4a26-af85-4cfa1fdfbde0)
 
-    docker-compose up -d
-    
-You can then access the application through the following URL:
+Рисунок 14. Административный модуль 
+В пределах интерфейса администратора доступны элементы управления, позволяющие выполнять операции добавления, удаления и редактирования информации (Рисунок 15).
+ ![изображение](https://github.com/user-attachments/assets/6c5c2b4f-2ca3-4769-b876-2b549854ab7b)
 
-    http://127.0.0.1:8000
+Рисунок 15. Управление информацией 
 
-**NOTES:** 
-- Minimum required Docker engine version `17.04` for development (see [Performance tuning for volume mounts](https://docs.docker.com/docker-for-mac/osxfs-caching/))
-- The default configuration uses a host-volume in your home directory `.docker-composer` for composer caches
+SEO-оптимизация
+1) Мета-теги
+<meta name="keywords" content="изучение языков, языковые курсы, обучение иностранным языкам, преподавание языков, разговорный клуб, онлайн-уроки, языковая практика, подготовка к экзаменам, языковые материалы, культурные обмены, преподаватели языков, методики обучения, LanguageLearn">
+<meta name="description" content="Хотите выучить новый язык? Наша языковая школа предлагает курсы для всех уровней: от начинающих до продвинутых. Получите доступ к опытным преподавателям, интерактивным урокам и языковой практике в дружелюбной атмосфере!">
+2) Внутренняя перелинковка
+<p><a class="btn btn-default" href="<?= Url::to(['/site/index#]) ?>">Записаться на курс&raquo;</a></p>
+3) Оптимизация изображений
+<img src="image/online-study.jpg" alt="верхний слой компьютера">
+4) Мобильная оптимизация
+![изображение](https://github.com/user-attachments/assets/514ef5db-cd6a-4fe2-8cee-38892188cc40)
+![изображение](https://github.com/user-attachments/assets/7f9969cd-08f6-43f2-87c4-85a8b34d3b2e)
+![изображение](https://github.com/user-attachments/assets/d506d096-3524-4405-b235-33d7b37fb589)
 
 
-CONFIGURATION
--------------
 
-### Database
+ 
 
-Edit the file `config/db.php` with real data, for example:
 
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
+ 
 
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
 
 
-TESTING
--------
 
-Tests are located in `tests` directory. They are developed with [Codeception PHP Testing Framework](http://codeception.com/).
-By default, there are 3 test suites:
-
-- `unit`
-- `functional`
-- `acceptance`
-
-Tests can be executed by running
-
-```
-vendor/bin/codecept run
-```
-
-The command above will execute unit and functional tests. Unit tests are testing the system components, while functional
-tests are for testing user interaction. Acceptance tests are disabled by default as they require additional setup since
-they perform testing in real browser. 
-
-
-### Running  acceptance tests
-
-To execute acceptance tests do the following:  
-
-1. Rename `tests/acceptance.suite.yml.example` to `tests/acceptance.suite.yml` to enable suite configuration
-
-2. Replace `codeception/base` package in `composer.json` with `codeception/codeception` to install full-featured
-   version of Codeception
-
-3. Update dependencies with Composer 
-
-    ```
-    composer update  
-    ```
-
-4. Download [Selenium Server](http://www.seleniumhq.org/download/) and launch it:
-
-    ```
-    java -jar ~/selenium-server-standalone-x.xx.x.jar
-    ```
-
-    In case of using Selenium Server 3.0 with Firefox browser since v48 or Google Chrome since v53 you must download [GeckoDriver](https://github.com/mozilla/geckodriver/releases) or [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and launch Selenium with it:
-
-    ```
-    # for Firefox
-    java -jar -Dwebdriver.gecko.driver=~/geckodriver ~/selenium-server-standalone-3.xx.x.jar
-    
-    # for Google Chrome
-    java -jar -Dwebdriver.chrome.driver=~/chromedriver ~/selenium-server-standalone-3.xx.x.jar
-    ``` 
-    
-    As an alternative way you can use already configured Docker container with older versions of Selenium and Firefox:
-    
-    ```
-    docker run --net=host selenium/standalone-firefox:2.53.0
-    ```
-
-5. (Optional) Create `yii2basic_test` database and update it by applying migrations if you have them.
-
-   ```
-   tests/bin/yii migrate
-   ```
-
-   The database configuration can be found at `config/test_db.php`.
-
-
-6. Start web server:
-
-    ```
-    tests/bin/yii serve
-    ```
-
-7. Now you can run all available tests
-
-   ```
-   # run all available tests
-   vendor/bin/codecept run
-
-   # run acceptance tests
-   vendor/bin/codecept run acceptance
-
-   # run only unit and functional tests
-   vendor/bin/codecept run unit,functional
-   ```
-
-### Code coverage support
-
-By default, code coverage is disabled in `codeception.yml` configuration file, you should uncomment needed rows to be able
-to collect code coverage. You can run your tests and collect coverage with the following command:
-
-```
-#collect coverage for all tests
-vendor/bin/codecept run --coverage --coverage-html --coverage-xml
-
-#collect coverage only for unit tests
-vendor/bin/codecept run unit --coverage --coverage-html --coverage-xml
-
-#collect coverage for unit and functional tests
-vendor/bin/codecept run functional,unit --coverage --coverage-html --coverage-xml
-```
-
-You can see code coverage output under the `tests/_output` directory.
